@@ -9,7 +9,11 @@
 import UIKit
 import Meridian
 
-class ViewController: UIViewController {
+class ViewController: MRMapViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+    self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +24,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
