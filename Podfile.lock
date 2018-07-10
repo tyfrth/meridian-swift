@@ -1,0 +1,16 @@
+PODS:
+  - MeridianSDK (4.5.0)
+
+DEPENDENCIES:
+  - MeridianSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MeridianSDK
+
+SPEC CHECKSUMS:
+  MeridianSDK: 9bcc14cf867fb4754f030fc4b712eb2ad284d8c3
+
+PODFILE CHECKSUM: b2227a31876abc66ca72fc8974be0dab60d12e95
+
+COCOAPODS: 1.5.3

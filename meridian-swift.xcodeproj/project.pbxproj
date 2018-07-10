@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D23B134320F42E75001AB9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B134220F42E75001AB9C4 /* AppDelegate.swift */; };
+		D23B134520F42E75001AB9C4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B134420F42E75001AB9C4 /* MapViewController.swift */; };
+		D23B134820F42E75001AB9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23B134620F42E75001AB9C4 /* Main.storyboard */; };
+		D23B134A20F42E77001AB9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23B134920F42E77001AB9C4 /* Assets.xcassets */; };
+		D23B134D20F42E77001AB9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23B134B20F42E77001AB9C4 /* LaunchScreen.storyboard */; };
+		F1B06914AE2C9DFC857F73AF /* Pods_meridian_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A3F73586F980C955D0ED8F /* Pods_meridian_swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		110989B64980B7C791166C8C /* Pods-meridian-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meridian-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-meridian-swift/Pods-meridian-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		588014F5BCFE4163221E84B9 /* Pods-meridian-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meridian-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-meridian-swift/Pods-meridian-swift.release.xcconfig"; sourceTree = "<group>"; };
+		82A3F73586F980C955D0ED8F /* Pods_meridian_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meridian_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23B133F20F42E75001AB9C4 /* meridian-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meridian-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23B134220F42E75001AB9C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D23B134420F42E75001AB9C4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D23B134720F42E75001AB9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D23B134920F42E77001AB9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D23B134C20F42E77001AB9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D23B134E20F42E77001AB9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D23B133C20F42E75001AB9C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B06914AE2C9DFC857F73AF /* Pods_meridian_swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14A2454EF348DB3405C16621 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82A3F73586F980C955D0ED8F /* Pods_meridian_swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D23B133620F42E75001AB9C4 = {
+			isa = PBXGroup;
+			children = (
+				D23B134120F42E75001AB9C4 /* meridian-swift */,
+				D23B134020F42E75001AB9C4 /* Products */,
+				D878A6FB937345A14FEC70C1 /* Pods */,
+				14A2454EF348DB3405C16621 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D23B134020F42E75001AB9C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D23B133F20F42E75001AB9C4 /* meridian-swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D23B134120F42E75001AB9C4 /* meridian-swift */ = {
+			isa = PBXGroup;
+			children = (
+				D23B134220F42E75001AB9C4 /* AppDelegate.swift */,
+				D23B134420F42E75001AB9C4 /* MapViewController.swift */,
+				D23B134620F42E75001AB9C4 /* Main.storyboard */,
+				D23B134920F42E77001AB9C4 /* Assets.xcassets */,
+				D23B134B20F42E77001AB9C4 /* LaunchScreen.storyboard */,
+				D23B134E20F42E77001AB9C4 /* Info.plist */,
+			);
+			path = "meridian-swift";
+			sourceTree = "<group>";
+		};
+		D878A6FB937345A14FEC70C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				110989B64980B7C791166C8C /* Pods-meridian-swift.debug.xcconfig */,
+				588014F5BCFE4163221E84B9 /* Pods-meridian-swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D23B133E20F42E75001AB9C4 /* meridian-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23B135120F42E77001AB9C4 /* Build configuration list for PBXNativeTarget "meridian-swift" */;
+			buildPhases = (
+				8593CC6AA35AC4E3A77A11EA /* [CP] Check Pods Manifest.lock */,
+				D23B133B20F42E75001AB9C4 /* Sources */,
+				D23B133C20F42E75001AB9C4 /* Frameworks */,
+				D23B133D20F42E75001AB9C4 /* Resources */,
+				E3CBF2D9A5A0788D0C813709 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "meridian-swift";
+			productName = "meridian-swift";
+			productReference = D23B133F20F42E75001AB9C4 /* meridian-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D23B133720F42E75001AB9C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = tyfrith;
+				TargetAttributes = {
+					D23B133E20F42E75001AB9C4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D23B133A20F42E75001AB9C4 /* Build configuration list for PBXProject "meridian-swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D23B133620F42E75001AB9C4;
+			productRefGroup = D23B134020F42E75001AB9C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D23B133E20F42E75001AB9C4 /* meridian-swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D23B133D20F42E75001AB9C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23B134D20F42E77001AB9C4 /* LaunchScreen.storyboard in Resources */,
+				D23B134A20F42E77001AB9C4 /* Assets.xcassets in Resources */,
+				D23B134820F42E75001AB9C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8593CC6AA35AC4E3A77A11EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-meridian-swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CBF2D9A5A0788D0C813709 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-meridian-swift/Pods-meridian-swift-frameworks.sh",
+				"${PODS_ROOT}/MeridianSDK/Meridian.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Meridian.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-meridian-swift/Pods-meridian-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D23B133B20F42E75001AB9C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23B134520F42E75001AB9C4 /* MapViewController.swift in Sources */,
+				D23B134320F42E75001AB9C4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D23B134620F42E75001AB9C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D23B134720F42E75001AB9C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D23B134B20F42E77001AB9C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D23B134C20F42E77001AB9C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D23B134F20F42E77001AB9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D23B135020F42E77001AB9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D23B135220F42E77001AB9C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 110989B64980B7C791166C8C /* Pods-meridian-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DM3LM6ZH6;
+				INFOPLIST_FILE = "meridian-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tyfrith.meridian-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D23B135320F42E77001AB9C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 588014F5BCFE4163221E84B9 /* Pods-meridian-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DM3LM6ZH6;
+				INFOPLIST_FILE = "meridian-swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tyfrith.meridian-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D23B133A20F42E75001AB9C4 /* Build configuration list for PBXProject "meridian-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23B134F20F42E77001AB9C4 /* Debug */,
+				D23B135020F42E77001AB9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23B135120F42E77001AB9C4 /* Build configuration list for PBXNativeTarget "meridian-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23B135220F42E77001AB9C4 /* Debug */,
+				D23B135320F42E77001AB9C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D23B133720F42E75001AB9C4 /* Project object */;
+}
