@@ -13,6 +13,7 @@
 		D23B134A20F42E77001AB9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23B134920F42E77001AB9C4 /* Assets.xcassets */; };
 		D23B134D20F42E77001AB9C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23B134B20F42E77001AB9C4 /* LaunchScreen.storyboard */; };
 		D23B135520F43242001AB9C4 /* App_Map_ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B135420F43242001AB9C4 /* App_Map_ID.swift */; };
+		D26A693D211130F900BB7CA7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26A693C211130F900BB7CA7 /* TableViewController.swift */; };
 		F1B06914AE2C9DFC857F73AF /* Pods_meridian_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A3F73586F980C955D0ED8F /* Pods_meridian_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		D23B134C20F42E77001AB9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D23B134E20F42E77001AB9C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D23B135420F43242001AB9C4 /* App_Map_ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Map_ID.swift; sourceTree = "<group>"; };
+		D26A693C211130F900BB7CA7 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = "/Users/tylerfrith/Desktop/SDK/projects/ios/meridian-ios-swift/meridian-swift/meridian-swift/TableViewController.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		D23B134120F42E75001AB9C4 /* meridian-swift */ = {
 			isa = PBXGroup;
 			children = (
+				D26A693C211130F900BB7CA7 /* TableViewController.swift */,
 				D23B134220F42E75001AB9C4 /* AppDelegate.swift */,
 				D23B134420F42E75001AB9C4 /* MapViewController.swift */,
 				D23B135420F43242001AB9C4 /* App_Map_ID.swift */,
@@ -206,6 +209,7 @@
 				D23B135520F43242001AB9C4 /* App_Map_ID.swift in Sources */,
 				D23B134520F42E75001AB9C4 /* MapViewController.swift in Sources */,
 				D23B134320F42E75001AB9C4 /* AppDelegate.swift in Sources */,
+				D26A693D211130F900BB7CA7 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

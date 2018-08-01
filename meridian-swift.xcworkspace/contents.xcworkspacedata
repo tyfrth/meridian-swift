@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/tylerfrith/Desktop/SDK/projects/ios/meridian-ios-swift/meridian-swift/meridian-swift/TableViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:meridian-swift.xcodeproj">
    </FileRef>
    <FileRef

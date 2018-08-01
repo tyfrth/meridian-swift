@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let config = MRConfig()
-      //  config.applicationToken = ""
+        config.applicationToken = "090c29d8b4cc628e4bd327abf37f62e4e3477bae"
         Meridian.configure(config)
         return true
     }
