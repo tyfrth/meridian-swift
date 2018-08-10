@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Your location will be used for maps and to scan for nearby beacons</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Your location will be used for maps and to scan for nearby beacons</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location will be used for maps and to scan for nearby beacons.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

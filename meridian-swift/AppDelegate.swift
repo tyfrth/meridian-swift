@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        //configure meridian sdk
         let config = MRConfig()
         config.applicationToken = "090c29d8b4cc628e4bd327abf37f62e4e3477bae"
         Meridian.configure(config)

@@ -8,145 +8,34 @@
 import UIKit
 import Meridian
 
-class TableViewController: UITableViewController {
+class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    private var exampleData = [(sectionHeader: String, viewControllers: [AnyClass])]()
-    private var selectedExample: AnyClass?
-
+    let examples = ["Example MRMapViewController", "example 2", "example 3", "example 4"]
+    let segueIdentifier = ["a", "b", "c", "d"]
+    
     override func viewDidLoad() {
-
-            super.viewDidLoad()
-            self.title = "Meridian SDK Examples, yo!"
-            exampleData = [
-                ("General", [
-                MapViewController.self
-//                    MSMapViewController.self,
-//                    MSDelegateViewController.self,
-//                    MSConvertCoordinatesViewController.self,
-//                    MSVisibleMapRectViewController.self,
-//                    MSEmbeddedMapViewController.self
-//                    ]),
-//                ("Map UI", [
-//                    MSLoadingViewController.self,
-//                    MSShowsPlacemarksViewController.self,
-//                    MSShowsButtonsViewController.self,
-//                    MSShowsLocationViewController.self
-//                    ]),
-//                ("Annotations and Overlays", [
-//                    MSAddAnnotationViewController.self,
-//                    MSSelectAnnotationViewController.self,
-//                    MSCustomAnnotationViewController.self,
-//                    MSCustomUserAnnotationViewController.self,
-//                    MSCustomCalloutViewController.self,
-//                    MSOverlayViewController.self,
-//                    MSCustomAnnotationSubclassViewController.self
-//                    ]),
-//                ("Routes", [
-//                    MSDirectionsViewController.self,
-//                    MSCustomRouteViewController.self,
-//                    MSManualRoutingViewController.self
-//                    ]),
-//                ("Campaigns", [
-//                    MSCampaignsTableViewController.self
-//                    ]),
-//                ("Loading Placemarks", [
-//                    MSPlacemarkListTableViewController.self,
-//                    MSSearchTableViewController.self,
-//                    MSNearbyTableViewController.self
-//                    ]),
-//                ("Friends", [
-//                    MSFriendTableViewController.self,
-//                    MSFriendTableViewController2.self,
-//                    MSFriendTableViewController3.self
-                    ])
-            ]
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return exampleData.count
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section < exampleData.count {
-            return exampleData[section].sectionHeader
-        }
-        return nil
+    //creates number of rows
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return examples.count
     }
-
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if section < exampleData.count {
-//            return exampleData[section].viewControllers.count
-//        }
-//        return 0
-//    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    
+    //adds text label to each row
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = examples[indexPath.row]
+        
+        return(cell)
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segueIdentifier[indexPath.row], sender: self)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
