@@ -10,7 +10,7 @@ import Meridian
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let examples = ["Example MRMapViewController", "example 2", "example 3", "example 4"]
+    let examples = ["MRMapViewController", "Campaign Monitoring", "example 3", "example 4"]
     let segueIdentifier = ["a", "b", "c", "d"]
     
     override func viewDidLoad() {

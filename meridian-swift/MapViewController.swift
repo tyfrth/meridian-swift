@@ -13,13 +13,24 @@ import Meridian
 class MapViewController: MRMapViewController {
     
     override func viewWillAppear(_ animated: Bool) {
+        self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+//        self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
+        
+        var blurView: UIVisualEffectView!
+        // and in showBlur() function, sto the effect in this variable:
+
+        let blurEffect: UIBlurEffect = UIBlurEffect(style: .light)
+         blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.backgroundColor = UIColor.clear
+        //and in destroyBlur() call:
+
+        //blurView.removeFromSuperview()
+   }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
