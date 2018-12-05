@@ -19,17 +19,8 @@ class MapViewController: MRMapViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
+       // self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
         
-        var blurView: UIVisualEffectView!
-        // and in showBlur() function, sto the effect in this variable:
-
-        let blurEffect: UIBlurEffect = UIBlurEffect(style: .light)
-         blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.backgroundColor = UIColor.clear
-        //and in destroyBlur() call:
-
-        //blurView.removeFromSuperview()
    }
     
     override func didReceiveMemoryWarning() {
@@ -43,19 +34,9 @@ class MapViewController: MRMapViewController {
         print("map view finished loading")
     }
     
-    //    private var selectedOnLoad = false
-    
-    //    override func mapView(_ mapView: MRMapView, didAdd views: [MRAnnotationView]) {
-    //        if self.selectedOnLoad {
-    //            return
-    //        }
-    //        for view in views {
-    //            if let title = view.annotation.title, title == "Converse" {
-    //                self.mapView.selectAnnotation(view.annotation, animated: true)
-    //                self.selectedOnLoad = true
-    //            }
-    //        }
-    //    }
+    override func mapView(_ mapView: MRMapView, requestedDirectionsTo placemark: MRPlacemark) {
+//        print("directions requested")
+    }
     
 }
 
