@@ -1,5 +1,5 @@
 PODS:
-  - MeridianSDK (4.9.0)
+  - MeridianSDK (4.10.0)
 
 DEPENDENCIES:
   - MeridianSDK
@@ -9,7 +9,7 @@ SPEC REPOS:
     - MeridianSDK
 
 SPEC CHECKSUMS:
-  MeridianSDK: 58151b6325e0174e36bebcdf428d541017139615
+  MeridianSDK: b9a155d89ee3fe6ed21fe61cb241f0066f406e7e
 
 PODFILE CHECKSUM: 40cc6db9f6d9dea345e8f00d799254a6a885e583
 
