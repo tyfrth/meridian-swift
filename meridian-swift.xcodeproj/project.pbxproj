@@ -10,6 +10,9 @@
 		16DC381A83EA1AA8EF7679C5 /* Pods_meridian_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1647EF20A3619055C78D0F /* Pods_meridian_swift.framework */; };
 		D23622CC2255594100489097 /* beacon.png in Resources */ = {isa = PBXBuildFile; fileRef = D23622CB2255594100489097 /* beacon.png */; };
 		D23622CE2255610200489097 /* beacon_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D23622CD2255610200489097 /* beacon_2.png */; };
+		D23622D0225C140500489097 /* SKY.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D23622CF225C140500489097 /* SKY.jpg */; };
+		D23622D2225C149A00489097 /* sky2.png in Resources */ = {isa = PBXBuildFile; fileRef = D23622D1225C149A00489097 /* sky2.png */; };
+		D23622D4225C1ABB00489097 /* MeridianCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23622D3225C1ABB00489097 /* MeridianCollectionViewController.swift */; };
 		D23B134320F42E75001AB9C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B134220F42E75001AB9C4 /* AppDelegate.swift */; };
 		D23B134820F42E75001AB9C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23B134620F42E75001AB9C4 /* Main.storyboard */; };
 		D23B134A20F42E77001AB9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23B134920F42E77001AB9C4 /* Assets.xcassets */; };
@@ -24,6 +27,9 @@
 		27518DA621FD4D91930AB683 /* Pods-meridian-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meridian-swift.release.xcconfig"; path = "Target Support Files/Pods-meridian-swift/Pods-meridian-swift.release.xcconfig"; sourceTree = "<group>"; };
 		D23622CB2255594100489097 /* beacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beacon.png; path = ../../../../../../beacon.png; sourceTree = "<group>"; };
 		D23622CD2255610200489097 /* beacon_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beacon_2.png; path = ../../../../../../beacon_2.png; sourceTree = "<group>"; };
+		D23622CF225C140500489097 /* SKY.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SKY.jpg; path = ../../../../../../SKY.jpg; sourceTree = "<group>"; };
+		D23622D1225C149A00489097 /* sky2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sky2.png; path = ../../../../../../sky2.png; sourceTree = "<group>"; };
+		D23622D3225C1ABB00489097 /* MeridianCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeridianCollectionViewController.swift; sourceTree = "<group>"; };
 		D23B133F20F42E75001AB9C4 /* meridian-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meridian-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23B134220F42E75001AB9C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D23B134720F42E75001AB9C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,13 +85,16 @@
 			isa = PBXGroup;
 			children = (
 				D23622CD2255610200489097 /* beacon_2.png */,
+				D23622D1225C149A00489097 /* sky2.png */,
 				D23622CB2255594100489097 /* beacon.png */,
+				D23622CF225C140500489097 /* SKY.jpg */,
 				D23B135420F43242001AB9C4 /* App_Map_ID.swift */,
 				D2A2DE35217A65BA00326D54 /* TableViewController.swift */,
 				D2A45F53211D1DEF00A75C99 /* MapViewController.swift */,
 				D23B134220F42E75001AB9C4 /* AppDelegate.swift */,
 				D23B134B20F42E77001AB9C4 /* LaunchScreen.storyboard */,
 				D23B134620F42E75001AB9C4 /* Main.storyboard */,
+				D23622D3225C1ABB00489097 /* MeridianCollectionViewController.swift */,
 				D23B134920F42E77001AB9C4 /* Assets.xcassets */,
 				D23B134E20F42E77001AB9C4 /* Info.plist */,
 			);
@@ -160,9 +169,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23622D2225C149A00489097 /* sky2.png in Resources */,
 				D23B134D20F42E77001AB9C4 /* LaunchScreen.storyboard in Resources */,
 				D23622CC2255594100489097 /* beacon.png in Resources */,
 				D23622CE2255610200489097 /* beacon_2.png in Resources */,
+				D23622D0225C140500489097 /* SKY.jpg in Resources */,
 				D23B134A20F42E77001AB9C4 /* Assets.xcassets in Resources */,
 				D23B134820F42E75001AB9C4 /* Main.storyboard in Resources */,
 			);
@@ -222,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23622D4225C1ABB00489097 /* MeridianCollectionViewController.swift in Sources */,
 				D23B135520F43242001AB9C4 /* App_Map_ID.swift in Sources */,
 				D23B134320F42E75001AB9C4 /* AppDelegate.swift in Sources */,
 				D2A45F54211D1DEF00A75C99 /* MapViewController.swift in Sources */,
