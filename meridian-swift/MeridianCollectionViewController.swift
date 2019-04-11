@@ -8,9 +8,20 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+//private let reuseIdentifier = "Cell"
+//set the reuseIdentifier consant
+//private let reuseIdentifier = "meridianCell"
 
 class MeridianCollectionViewController: UICollectionViewController {
+    
+//    //set the reuseIdentifier consant
+//    private let reuseIdentifier = "meridianCell"
+    
+//    //set sectionInsets constant
+//    private let sectionInsets = UIEdgeInsets(top: 50.0,
+//                                             left: 20.0,
+//                                             bottom: 50.0,
+//                                             right: 20.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +30,10 @@ class MeridianCollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "meridianCell")
 
         // Do any additional setup after loading the view.
+        print("view did load, bitch!")
     }
 
     /*
@@ -36,22 +48,22 @@ class MeridianCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 1
+//    }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 8
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "meridianCell", for: indexPath)
+
         // Configure the cell
-    
+
         return cell
     }
 
