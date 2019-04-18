@@ -20,11 +20,15 @@ class MeridianCollectionViewController: UICollectionViewController {
 //    //set sectionInsets constant
 //    private let sectionInsets = UIEdgeInsets(top: 50.0,
 //                                             left: 20.0,
-//                                             bottom: 50.0,
-//                                             right: 20.0)
-
+//                                             bottom: 50.0,right: 20.0)
+   
+    //initialize empty array
+    var Array = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Array = ["MRMapViewController", "Campaigns", "Location Sharing", "Asset Tracking", "Search", "Custom Annotations"]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,7 +37,7 @@ class MeridianCollectionViewController: UICollectionViewController {
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "meridianCell")
 
         // Do any additional setup after loading the view.
-        print("view did load, bitch!")
+        print("view did load!")
     }
 
     /*
@@ -56,13 +60,15 @@ class MeridianCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 8
+        return Array.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "meridianCell", for: indexPath)
-
-        // Configure the cell
+        
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "meridianCell", for: indexPath) as UICollectionViewCell
+        
+        var Button = cell.viewWithTag(1) as! UIButton
+        Button.setTitle(Array[indexPath.row], for: UIControlState.normal)
 
         return cell
     }
