@@ -23,12 +23,12 @@ class MeridianCollectionViewController: UICollectionViewController {
 //                                             bottom: 50.0,right: 20.0)
    
     //initialize empty array
-    var Array = [String]()
+    var meridianArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Array = ["MRMapViewController", "Campaigns", "Location Sharing", "Asset Tracking", "Search", "Custom Annotations"]
+        meridianArray = ["MRMapViewController", "Campaigns", "Location Sharing", "Asset Tracking", "Search", "Custom Annotations"]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -60,17 +60,24 @@ class MeridianCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return Array.count
+        return meridianArray.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "meridianCell", for: indexPath) as UICollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "meridianCell", for: indexPath) as UICollectionViewCell
         
-        var Button = cell.viewWithTag(1) as! UIButton
-        Button.setTitle(Array[indexPath.row], for: UIControlState.normal)
+        let Button = cell.viewWithTag(1) as! UIButton
+        Button.setTitle(meridianArray[indexPath.row], for: UIControlState.normal)
 
         return cell
+    }
+    
+    //the bit that lets us navigate to view controllers from collection view
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let name = meridianArray[indexPath.row]
+        let viewController = storyboard?.instantiateViewController(withIdentifier: name)
+        self.navigationController?.pushViewController(viewController!, animated: true)
     }
 
     // MARK: UICollectionViewDelegate

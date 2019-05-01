@@ -34,7 +34,7 @@ class MapViewController: MRMapViewController {
         print("map view finished loading")
     }
     
-    override func mapView(_ mapView: MRMapView, requestedDirectionsTo placemark: MRPlacemark) {
+     override func mapView(_ mapView: MRMapView, requestedDirectionsTo placemark: MRPlacemark) {
 //        print("directions requested")
     }
     
