@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16DC381A83EA1AA8EF7679C5 /* Pods_meridian_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1647EF20A3619055C78D0F /* Pods_meridian_swift.framework */; };
+		D222753E228F6632007B6CB6 /* CampaignController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222753D228F6632007B6CB6 /* CampaignController.swift */; };
 		D23622CC2255594100489097 /* beacon.png in Resources */ = {isa = PBXBuildFile; fileRef = D23622CB2255594100489097 /* beacon.png */; };
 		D23622CE2255610200489097 /* beacon_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D23622CD2255610200489097 /* beacon_2.png */; };
 		D23622D2225C149A00489097 /* sky2.png in Resources */ = {isa = PBXBuildFile; fileRef = D23622D1225C149A00489097 /* sky2.png */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		11420A73A7CBECBE18227B73 /* Pods-meridian-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meridian-swift.debug.xcconfig"; path = "Target Support Files/Pods-meridian-swift/Pods-meridian-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		27518DA621FD4D91930AB683 /* Pods-meridian-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meridian-swift.release.xcconfig"; path = "Target Support Files/Pods-meridian-swift/Pods-meridian-swift.release.xcconfig"; sourceTree = "<group>"; };
+		D222753D228F6632007B6CB6 /* CampaignController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignController.swift; sourceTree = "<group>"; };
 		D23622CB2255594100489097 /* beacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beacon.png; path = ../../../../../../beacon.png; sourceTree = "<group>"; };
 		D23622CD2255610200489097 /* beacon_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beacon_2.png; path = ../../../../../../beacon_2.png; sourceTree = "<group>"; };
 		D23622D1225C149A00489097 /* sky2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sky2.png; path = ../../../../../../sky2.png; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				D23B134220F42E75001AB9C4 /* AppDelegate.swift */,
 				D23B134B20F42E77001AB9C4 /* LaunchScreen.storyboard */,
 				D23B134620F42E75001AB9C4 /* Main.storyboard */,
+				D222753D228F6632007B6CB6 /* CampaignController.swift */,
 				D23622D3225C1ABB00489097 /* MeridianCollectionViewController.swift */,
 				D23B134920F42E77001AB9C4 /* Assets.xcassets */,
 				D23B134E20F42E77001AB9C4 /* Info.plist */,
@@ -234,6 +237,7 @@
 				D23B134320F42E75001AB9C4 /* AppDelegate.swift in Sources */,
 				D2A45F54211D1DEF00A75C99 /* MapViewController.swift in Sources */,
 				D2A2DE36217A65BA00326D54 /* TableViewController.swift in Sources */,
+				D222753E228F6632007B6CB6 /* CampaignController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

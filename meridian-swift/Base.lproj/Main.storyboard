@@ -48,10 +48,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="9gj-fo-Qjv"/>
                     <navigationItem key="navigationItem" id="l2T-42-z4K"/>
-                    <connections>
-                        <segue destination="fhO-b8-aVX" kind="show" identifier="c" id="Mml-Z1-E50"/>
-                        <segue destination="46n-tq-glK" kind="show" id="p2h-KF-rdT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUK-0y-Xdn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +56,7 @@
         <!--MRMapViewController-->
         <scene sceneID="xvh-oZ-xGW">
             <objects>
-                <viewController storyboardIdentifier="A" id="fJZ-Lh-NUm" customClass="MapViewController" customModule="meridian_swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MRMapViewController" id="fJZ-Lh-NUm" customClass="MapViewController" customModule="meridian_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f9I-0z-pkX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
@@ -72,28 +68,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nef-v5-vEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="514" y="-1064"/>
+            <point key="canvasLocation" x="-204" y="-367"/>
         </scene>
-        <!--Orange-->
+        <!--CampainController-->
         <scene sceneID="8jg-Gk-5tW">
             <objects>
-                <viewController id="ugR-yu-9oS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Campaigns" id="ugR-yu-9oS" userLabel="CampainController" customClass="CampaignController" customModule="meridian_swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s9j-CW-8cE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.4173182236887566" blue="0.26876657681708127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="qps-5v-RPH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orange" id="rBi-uN-ezJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jm9-QO-fv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="-335"/>
+            <point key="canvasLocation" x="526" y="-367"/>
         </scene>
         <!--Item-->
         <scene sceneID="b9j-SB-ks5">
             <objects>
-                <viewController id="46n-tq-glK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Location Sharing" id="46n-tq-glK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="045-jk-mST">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,12 +99,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Vi-Pr-NwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1537" y="88"/>
+            <point key="canvasLocation" x="1230" y="-367"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gQz-LE-80F">
             <objects>
-                <viewController id="fhO-b8-aVX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Asset Tracking" id="fhO-b8-aVX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v4C-4l-gvY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +114,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqZ-Nl-19J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2295" y="798"/>
+            <point key="canvasLocation" x="1916" y="-367"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oES-da-8q7">
+            <objects>
+                <viewController storyboardIdentifier="Search" id="7Xd-x5-vP1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ca-ZK-5uu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95211196170000001" green="1" blue="0.20011695700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="c5l-Hz-K3Q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ImG-EN-fnM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2612" y="-367"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HTj-R0-yfo">
+            <objects>
+                <viewController storyboardIdentifier="Custom Annotations" id="cXF-oh-u4C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOm-ey-Moz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.10281460186736846" blue="0.12421058540013252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="I8M-kx-tQ5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egM-EU-eSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3287" y="-366"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JKq-zl-S5M">
@@ -198,22 +223,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7z3-VW-2Hg">
-                            <size key="itemSize" width="195" height="164"/>
+                            <size key="itemSize" width="181" height="143"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="meridianCell" id="61k-zg-AVQ">
-                                <rect key="frame" x="90" y="0.0" width="195" height="164"/>
+                                <rect key="frame" x="0.0" y="0.0" width="181" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="195" height="164"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="181" height="143"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLw-JL-fQK">
-                                            <rect key="frame" x="68" y="72" width="56" height="32"/>
-                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLw-JL-fQK">
+                                            <rect key="frame" x="67.5" y="57" width="46" height="29"/>
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
                                             <state key="normal" title="Button">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
@@ -222,13 +247,10 @@
                                 </view>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.4941176471" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="mLw-JL-fQK" firstAttribute="centerY" secondItem="hEO-d0-Ulw" secondAttribute="centerY" id="UiQ-fV-uH7"/>
-                                    <constraint firstItem="mLw-JL-fQK" firstAttribute="centerX" secondItem="hEO-d0-Ulw" secondAttribute="centerX" id="Wy0-R0-VqY"/>
+                                    <constraint firstItem="mLw-JL-fQK" firstAttribute="centerY" secondItem="61k-zg-AVQ" secondAttribute="centerY" id="ZJt-o3-fFa"/>
+                                    <constraint firstItem="mLw-JL-fQK" firstAttribute="centerX" secondItem="61k-zg-AVQ" secondAttribute="centerX" id="jjP-Hv-gSH"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="hEO-d0-Ulw"/>
-                                <connections>
-                                    <segue destination="fJZ-Lh-NUm" kind="show" id="4za-Rp-35O"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -254,7 +276,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYf-PC-PvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-625" y="-302"/>
+            <point key="canvasLocation" x="-1497" y="88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a3g-3v-IWc">
@@ -279,4 +301,5 @@
         <image name="beacon_2.png" width="100" height="100"/>
         <image name="sky2.png" width="500" height="750"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

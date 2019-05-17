@@ -12,8 +12,11 @@ import Meridian
 
 class MapViewController: MRMapViewController {
     
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
+        self.navigationItem.title = "MRMapViewController"
     }
     
     
