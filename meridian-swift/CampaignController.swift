@@ -10,11 +10,17 @@ import Foundation
 import UIKit
 import Meridian
 
-class CampaignController: MRMapViewController, MRCampaignManagerDelegate {
+class CampaignController: UIViewController, MRCampaignManagerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
-        self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
+//        self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
         self.navigationItem.title = "CampaignController"
+    }
+    
+    @IBAction func toggleMonitoring(_ sender: UIButton) {
+        print("hey there button pressed")
+        sender.setTitle("Stop Campaign Monitoring", for: UIControlState.normal)
+    
     }
     
 }

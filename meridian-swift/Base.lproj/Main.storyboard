@@ -77,13 +77,32 @@
                     <view key="view" contentMode="scaleToFill" id="s9j-CW-8cE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVe-71-ePB">
+                                <rect key="frame" x="70.5" y="513" width="234" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="toggleMonitoring"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Start Campaign Monitoring">
+                                    <color key="titleColor" red="0.13725490200000001" green="0.4941176471" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleMonitoring:" destination="ugR-yu-9oS" eventType="touchUpInside" id="Rze-8q-qNh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GVe-71-ePB" firstAttribute="top" secondItem="qps-5v-RPH" secondAttribute="top" constant="493" id="RPz-0y-jm9"/>
+                            <constraint firstItem="qps-5v-RPH" firstAttribute="bottom" secondItem="GVe-71-ePB" secondAttribute="bottom" constant="124" id="VDT-EY-WPf"/>
+                            <constraint firstItem="GVe-71-ePB" firstAttribute="centerX" secondItem="s9j-CW-8cE" secondAttribute="centerX" id="oBF-GV-xT9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qps-5v-RPH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Orange" id="rBi-uN-ezJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jm9-QO-fv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526" y="-367"/>
+            <point key="canvasLocation" x="525.60000000000002" y="-367.46626686656674"/>
         </scene>
         <!--Item-->
         <scene sceneID="b9j-SB-ks5">

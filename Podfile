@@ -7,5 +7,6 @@ target 'meridian-swift' do
 
   # Pods for meridian-swift
 	pod 'MeridianSDK'
+	pod 'NVActivityIndicatorView'
 
 end

@@ -1,16 +1,22 @@
 PODS:
   - MeridianSDK (5.3.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
 
 DEPENDENCIES:
   - MeridianSDK
+  - NVActivityIndicatorView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MeridianSDK
+    - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   MeridianSDK: 7807f8b8e2b818fc781bc5d548d79f1bf0b6c0d1
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
 
-PODFILE CHECKSUM: b2227a31876abc66ca72fc8974be0dab60d12e95
+PODFILE CHECKSUM: 0d5ef438d0315a97751a41ab36f8c276bf96a5bb
 
 COCOAPODS: 1.6.1
