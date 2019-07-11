@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Meridian
 
-class MapViewController: MRMapViewController {
+class MapViewController: MRMapViewController, UIGestureRecognizerDelegate {
     
     
     
@@ -22,9 +22,24 @@ class MapViewController: MRMapViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        var filteredSubviews = self.view.subviews
+//
+//        if filteredSubviews = MRMapView {
+//
+//        }
+        
        // self.mapView.mapKey = MREditorKey(forMap: MAP_ID, app: APP_ID)
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(recognizer:)))
+        recognizer.delegate = self
+        self.view.addGestureRecognizer(recognizer)
         
    }
+    
+    @objc func handleTap(recognizer: UITapGestureRecognizer) {
+        print("-----TAPPED-----")
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
