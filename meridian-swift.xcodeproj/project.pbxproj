@@ -23,6 +23,7 @@
 		D23B135520F43242001AB9C4 /* App_Map_ID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23B135420F43242001AB9C4 /* App_Map_ID.swift */; };
 		D2A2DE36217A65BA00326D54 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A2DE35217A65BA00326D54 /* TableViewController.swift */; };
 		D2A45F54211D1DEF00A75C99 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A45F53211D1DEF00A75C99 /* MapViewController.swift */; };
+		D2FAB04322D7873B006CECA1 /* CreatePlacemarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FAB04222D7873B006CECA1 /* CreatePlacemarkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		D23B135420F43242001AB9C4 /* App_Map_ID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_Map_ID.swift; sourceTree = "<group>"; };
 		D2A2DE35217A65BA00326D54 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D2A45F53211D1DEF00A75C99 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D2FAB04222D7873B006CECA1 /* CreatePlacemarkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlacemarkController.swift; sourceTree = "<group>"; };
 		FA1647EF20A3619055C78D0F /* Pods_meridian_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_meridian_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				D23B134620F42E75001AB9C4 /* Main.storyboard */,
 				D222753D228F6632007B6CB6 /* CampaignController.swift */,
 				D23622D3225C1ABB00489097 /* MeridianCollectionViewController.swift */,
+				D2FAB04222D7873B006CECA1 /* CreatePlacemarkController.swift */,
 				D23B134920F42E77001AB9C4 /* Assets.xcassets */,
 				D23B134E20F42E77001AB9C4 /* Info.plist */,
 				D222754222A70A0D007B6CB6 /* Constants.swift */,
@@ -226,18 +229,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-meridian-swift/Pods-meridian-swift-frameworks.sh",
-				"${PODS_ROOT}/MeridianSDK/Meridian.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-meridian-swift/Pods-meridian-swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Meridian.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-meridian-swift/Pods-meridian-swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -257,6 +253,7 @@
 				D23B134320F42E75001AB9C4 /* AppDelegate.swift in Sources */,
 				D222754722AF2D5E007B6CB6 /* TabBarViewController.swift in Sources */,
 				D2A45F54211D1DEF00A75C99 /* MapViewController.swift in Sources */,
+				D2FAB04322D7873B006CECA1 /* CreatePlacemarkController.swift in Sources */,
 				D2A2DE36217A65BA00326D54 /* TableViewController.swift in Sources */,
 				D222753E228F6632007B6CB6 /* CampaignController.swift in Sources */,
 				D222754322A70A0D007B6CB6 /* Constants.swift in Sources */,
