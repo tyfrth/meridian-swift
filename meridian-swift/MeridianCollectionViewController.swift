@@ -28,7 +28,7 @@ class MeridianCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        meridianArray = ["MRMapViewController", "Campaigns", "Location Sharing", "Asset Tracking", "Search", "Custom Annotations", "Hackathon", "And Another", "Yet Another", "Holy shit another"]
+        meridianArray = ["MRMapViewController", "Campaigns", "Location Sharing", "Asset Tracking", "Search", "Custom Annotations", "Hackathon", "MapView", "Location", "Holy shit another"]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
